@@ -134,6 +134,7 @@ class SassRailsTest < Sass::Rails::TestCase
     assert_match /css-sass-erb-handler/,     css_output
     assert_match /css-scss-erb-handler/,     css_output
     assert_match /default-old-css/,          css_output
+    assert_match /overridden/,               css_output
   end
 
   test 'sprockets directives are ignored within an import' do
