@@ -128,6 +128,7 @@ END_OF_COMMAND
     assert_match css_output, /plain-old-css/
     assert_match css_output, /another-plain-old-css/
     assert_match css_output, /without-css-ext/
+    assert_match css_output, /overridden/
   end
   test "sass asset paths work" do
     css_output = sprockets_render("scss_project", "application.css.scss")
