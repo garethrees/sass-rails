@@ -1,5 +1,7 @@
 # Official Ruby-on-Rails Integration with Sass
 
+TEST
+
 This gem provides official integration for ruby on rails projects with the Sass stylesheet language.
 
 ## Installing
