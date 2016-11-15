@@ -72,7 +72,7 @@ class Sass::Rails::TestCase < ActiveSupport::TestCase
   def within_rails_app(name, without_gems = [], gem_options = $gem_options)
     sourcedir = File.expand_path("../../fixtures/#{name}", __FILE__)
 
-    Dir.mktmpdir do |tmpdir|
+    tmpdir = Dir.mktmpdir
       FileUtils.cp_r "#{sourcedir}/.", tmpdir
 
       Dir.chdir(tmpdir) do
@@ -81,7 +81,6 @@ class Sass::Rails::TestCase < ActiveSupport::TestCase
 
         yield tmpdir
       end
-    end
   end
 
   def process_gemfile(gemfile = "Gemfile", &blk)

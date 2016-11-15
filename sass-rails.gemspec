@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'tilt',            '>= 1.1', '< 3'
 
   s.add_development_dependency 'sqlite3'
+  s.add_development_dependency 'pry'
 
   s.files         = Dir["MIT-LICENSE", "README.md", "lib/**/*"]
   s.require_paths = ["lib"]
